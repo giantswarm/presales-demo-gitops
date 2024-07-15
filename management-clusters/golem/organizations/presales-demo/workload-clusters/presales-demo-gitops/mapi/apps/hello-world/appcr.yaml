@@ -1,0 +1,9 @@
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  name: presales-demo-gitops-hello-world
+spec:
+  catalog: giantswarm-test
+  name: hello-world
+  namespace: default
+  version: 0.2.1
