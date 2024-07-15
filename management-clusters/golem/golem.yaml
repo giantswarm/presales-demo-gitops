@@ -7,7 +7,7 @@ spec:
   decryption:
     provider: sops
     secretRef:
-      name: sops-gpg-master
+      name: presales-sops-gpg-master
   interval: 1m
   path: ./management-clusters/golem
   prune: false
