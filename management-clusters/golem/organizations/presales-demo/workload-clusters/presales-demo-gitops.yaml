@@ -9,8 +9,8 @@ spec:
   postBuild:
     substitute:
       cluster_name: presales-demo-gitops
-      cluster_release: 0.14.1
-      default_apps_release: 0.14.0
+      cluster_release: 1.1.0
+      default_apps_release: 0.52.0
       organization: presales-demo
   prune: false
   serviceAccountName: automation
