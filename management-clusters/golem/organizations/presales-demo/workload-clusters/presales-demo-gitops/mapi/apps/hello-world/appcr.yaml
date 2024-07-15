@@ -6,3 +6,4 @@ spec:
   catalog: giantswarm-test
   name: hello-world
   namespace: default
+  version: 0.2.1
