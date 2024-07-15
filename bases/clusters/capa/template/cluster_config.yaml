@@ -10,4 +10,5 @@ global:
   nodePools:
     nodepool0: {}
   providerSpecific: {}
-  release: {}
+  release:
+    version: 25.0.0

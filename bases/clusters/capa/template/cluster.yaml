@@ -27,4 +27,5 @@ spec:
     configMap:
       name: ${cluster_name}-config
       namespace: org-${organization}
-  version: {}
+      
+  version: ${cluster_release}
