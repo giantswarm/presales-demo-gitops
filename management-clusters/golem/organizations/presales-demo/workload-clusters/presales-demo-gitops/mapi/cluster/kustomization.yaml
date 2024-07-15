@@ -3,4 +3,4 @@ commonLabels:
   giantswarm.io/managed-by: flux
 kind: Kustomization
 resources:
-  - ../../../../../../../../bases/clusters/capa
+  - ../../../../../../../../bases/clusters/capa/template/
