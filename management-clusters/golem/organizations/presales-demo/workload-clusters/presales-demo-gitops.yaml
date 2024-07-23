@@ -4,6 +4,10 @@ metadata:
   name: golem-clusters-presales-demo-gitops
   namespace: default
 spec:
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg-presales-demo-gitops
   interval: 1m
   path: ./management-clusters/golem/organizations/presales-demo/workload-clusters/presales-demo-gitops/mapi
   postBuild:
