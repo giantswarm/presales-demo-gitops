@@ -1,0 +1,13 @@
+apiVersion: application.giantswarm.io/v1alpha1
+kind: App
+metadata:
+  name: presales-demo-gitops-demo-grafana
+  namespace: org-presales-demo
+  labels:
+    application.giantswarm.io/service: presales-demo-gitops-demo-grafana
+spec:
+  catalog: giantswarm
+  name: grafana
+  namespace: org-presales-demo
+  version: 2.13.0
+  

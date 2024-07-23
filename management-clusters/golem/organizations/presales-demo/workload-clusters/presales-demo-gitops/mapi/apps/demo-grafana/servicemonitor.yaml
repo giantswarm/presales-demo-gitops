@@ -5,14 +5,14 @@ metadata:
     ## This label is important as it is required for the Prometheus Agent to discover it.
     ## The team name should be the name of your internal team.
     application.giantswarm.io/team: presales-demo
-  name: hello-world
-  namespace: default
+  name: presales-demo-grafana-monitor
+  namespace: org-presales-demo
 spec:
   endpoints:
   - interval: 60s 
     path: /metrics 
-    targetPort: 8080       
+    targetPort: 3000       
     relabelings: [] 
   selector:
     matchLabels:
-      application.giantswarm.io/service: presales-demo-gitops-demo-cadvisor
+      application.giantswarm.io/service: presales-demo-gitops-demo-grafana
