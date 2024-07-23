@@ -8,5 +8,5 @@ metadata:
 spec:
   catalog: default
   name: cadvisor
-  namespace: org-presales-demo
+  namespace: default
   version: 0.44.0-gs2
