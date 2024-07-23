@@ -2,10 +2,11 @@ apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
   name: presales-demo-gitops-demo-cadvisor
+  namespace: org-presales-demo
   labels:
     application.giantswarm.io/service: presales-demo-gitops-demo-cadvisor
 spec:
   catalog: default
   name: cadvisor
-  namespace: org-presales-demo
+  namespace: default
   version: 0.44.0-gs2
