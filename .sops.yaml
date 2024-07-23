@@ -1,9 +1,6 @@
 creation_rules:
 - encrypted_regex: ^(data|stringData)$
   path_regex: management-clusters/golem/secrets/.*\.enc\.yaml
-  pgp: 5e5352b5b01fcce86056189d81c46b55bf997c79
-- encrypted_regex: ^(data|stringData)$
-  path_regex: management-clusters/golem/secrets/.*\.enc\.yaml
   pgp: 9831a64c72d65a682073fc976f466670ae25ba3e
 - encrypted_regex: ^(data|stringData)$
   path_regex: management-clusters/golem/organizations/presales-demo/workload-clusters/presales-demo-gitops/secrets/.*\.enc\.yaml
