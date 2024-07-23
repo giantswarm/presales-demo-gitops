@@ -10,3 +10,5 @@ patches:
     kind: App
 resources:
 - hello-world/appcr.yaml
+- demo-cadvisor/servicemonitor.yaml
+- demo-cadvisor/appcr.yaml

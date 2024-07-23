@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    ## This label is important as it is required for the Prometheus Agent to discover it.
+    ## The team name should be the name of your internal team.
+    application.giantswarm.io/team: presales-demo
+  name: hello-world
+  namespace: default
+spec:
+  endpoints:
+  - interval: 60s 
+    path: /metrics 
+    port: 8080       
+    relabelings: [] 
+  selector:
+    matchLabels:
+      application.giantswarm.io/service: presales-demo-gitops-demo-cadvisor
