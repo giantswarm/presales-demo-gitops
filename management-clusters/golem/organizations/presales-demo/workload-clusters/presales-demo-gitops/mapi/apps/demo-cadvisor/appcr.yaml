@@ -5,7 +5,7 @@ metadata:
   labels:
     application.giantswarm.io/service: presales-demo-gitops-demo-cadvisor
 spec:
-  catalog: giantswarm-test
+  catalog: default
   name: cadvisor
   namespace: default
-  version: 0.2.1
+  version: 0.44.0-gs2
