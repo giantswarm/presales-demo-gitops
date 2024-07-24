@@ -10,5 +10,4 @@ patches:
     kind: App
 resources:
 - hello-world/appcr.yaml
-- demo-grafana/servicemonitor.yaml
 - demo-grafana/appcr.yaml
