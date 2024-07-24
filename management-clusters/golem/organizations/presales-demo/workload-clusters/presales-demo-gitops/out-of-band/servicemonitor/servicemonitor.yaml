@@ -6,7 +6,7 @@ metadata:
     ## The team name should be the name of your internal team.
     application.giantswarm.io/team: presales-demo
   name: presales-demo-grafana-monitor
-  namespace: org-presales-demo
+  namespace: default
 spec:
   endpoints:
   - interval: 60s 
