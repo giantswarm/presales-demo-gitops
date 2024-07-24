@@ -28,5 +28,5 @@ spec:
   userConfig:
     configMap:
       name: ${cluster_name}-default-apps-config
-      namespace: default
+      namespace: org-${organization}
   version: ${default_apps_release}

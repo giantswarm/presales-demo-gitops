@@ -26,6 +26,6 @@ spec:
   userConfig:
     configMap:
       name: ${cluster_name}-config
-      namespace: default
+      namespace: org-${organization}
       
   version: ${cluster_release}
