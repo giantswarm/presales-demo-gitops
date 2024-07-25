@@ -1,0 +1,4 @@
+serviceMonitor:
+  enabled: true
+  labels:
+    application.giantswarm.io/team: presales-demo

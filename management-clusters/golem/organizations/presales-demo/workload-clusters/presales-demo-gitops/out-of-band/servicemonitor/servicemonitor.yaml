@@ -15,4 +15,4 @@ spec:
     relabelings: [] 
   selector:
     matchLabels:
-      application.giantswarm.io/service: presales-demo-gitops-demo-grafana
+      app.kubernetes.io/instance: demo-grafana
