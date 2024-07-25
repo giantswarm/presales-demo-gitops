@@ -2,11 +2,11 @@ apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
   name: presales-demo-gitops-hello-world
-  namespace: org-presales-demo
+  namespace: org-${organization}
   labels:
     application.giantswarm.io/service: presales-demo-gitops-hello-world
 spec:
   catalog: giantswarm-test
   name: hello-world
-  namespace: org-presales-demo
+  namespace: org-${organization}
   version: 2.3.2-da2cedc439b111c6e717c66f5aacacdc727520cc
