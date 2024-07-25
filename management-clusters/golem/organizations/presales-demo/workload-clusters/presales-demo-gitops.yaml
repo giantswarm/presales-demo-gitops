@@ -7,7 +7,7 @@ spec:
   decryption:
     provider: sops
     secretRef:
-      name: sops-gpg-presales-demo-gitops
+      name: presales-golem-gitops
   interval: 1m
   path: ./management-clusters/golem/organizations/presales-demo/workload-clusters/presales-demo-gitops/mapi
   postBuild:
