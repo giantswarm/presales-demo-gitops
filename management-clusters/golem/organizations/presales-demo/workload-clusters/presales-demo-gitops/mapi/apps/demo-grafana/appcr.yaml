@@ -8,6 +8,6 @@ metadata:
 spec:
   catalog: giantswarm
   name: grafana
-  namespace: default
+  namespace: org-presales-demo
   version: 2.13.0
   
