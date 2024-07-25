@@ -8,6 +8,6 @@ metadata:
 spec:
   catalog: giantswarm
   name: grafana
-  namespace: org-${organization}
+  namespace: default
   version: 2.13.0
   
