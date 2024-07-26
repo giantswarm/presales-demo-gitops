@@ -10,6 +10,5 @@ patches:
     kind: App
 resources:
 - hello-world/appcr.yaml
-- demo-grafana/appcr.yaml
 - grafana/appcr.yaml
 - grafana/configmap.yaml
