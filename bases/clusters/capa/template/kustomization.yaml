@@ -14,4 +14,3 @@ generatorOptions:
 kind: Kustomization
 resources:
   - cluster.yaml
-  - default_apps.yaml
