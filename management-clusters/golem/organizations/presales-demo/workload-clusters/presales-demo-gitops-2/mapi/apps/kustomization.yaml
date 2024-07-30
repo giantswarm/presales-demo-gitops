@@ -5,7 +5,7 @@ commonLabels:
 kind: Kustomization
 namespace: org-${organization}
 patches:
-  - path: patch_cluster_config.yaml
-    target:
-      kind: App
+- path: patch_cluster_config.yaml
+  target:
+    kind: App
 resources: []
