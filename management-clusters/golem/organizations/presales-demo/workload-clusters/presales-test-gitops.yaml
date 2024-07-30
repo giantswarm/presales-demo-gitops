@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: golem-clusters-presales-demo-gitops-2
+  name: golem-clusters-presales-test-gitops
   namespace: default
 spec:
   decryption:
@@ -9,10 +9,10 @@ spec:
     secretRef:
       name: presales-sops-gpg-master
   interval: 1m
-  path: ./management-clusters/golem/organizations/presales-demo/workload-clusters/presales-demo-gitops-2/mapi
+  path: ./management-clusters/golem/organizations/presales-demo/workload-clusters/presales-test-gitops/mapi
   postBuild:
     substitute:
-      cluster_name: presales-demo-gitops-2
+      cluster_name: presales-test-gitops
       cluster_release: 1.0.0
       default_apps_release: 0.52.0
       organization: presales-demo
