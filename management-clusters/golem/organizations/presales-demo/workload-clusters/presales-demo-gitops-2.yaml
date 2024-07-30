@@ -1,0 +1,20 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: golem-clusters-presales-demo-gitops-2
+  namespace: default
+spec:
+  interval: 1m
+  path: ./management-clusters/golem/organizations/presales-demo/workload-clusters/presales-demo-gitops-2/mapi
+  postBuild:
+    substitute:
+      cluster_name: presales-demo-gitops-2
+      cluster_release: 0.14.1
+      default_apps_release: 0.14.0
+      organization: presales-demo
+  prune: false
+  serviceAccountName: automation
+  sourceRef:
+    kind: GitRepository
+    name: golem-presales-demo-gitops
+  timeout: 2m
