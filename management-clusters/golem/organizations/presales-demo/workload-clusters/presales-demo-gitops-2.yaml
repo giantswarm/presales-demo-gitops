@@ -4,15 +4,19 @@ metadata:
   name: golem-clusters-presales-demo-gitops-2
   namespace: default
 spec:
+  decryption:
+    provider: sops
+    secretRef:
+      name: presales-sops-gpg-master
   interval: 1m
   path: ./management-clusters/golem/organizations/presales-demo/workload-clusters/presales-demo-gitops-2/mapi
   postBuild:
     substitute:
       cluster_name: presales-demo-gitops-2
-      cluster_release: 0.14.1
-      default_apps_release: 0.14.0
+      cluster_release: 1.0.0
+      default_apps_release: 0.52.0
       organization: presales-demo
-  prune: false
+  prune: true
   serviceAccountName: automation
   sourceRef:
     kind: GitRepository
