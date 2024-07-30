@@ -10,7 +10,7 @@ spec:
       name: presales-sops-gpg-master
   interval: 1m
   path: ./management-clusters/golem
-  prune: true
+  prune: false
   serviceAccountName: automation
   sourceRef:
     kind: GitRepository
