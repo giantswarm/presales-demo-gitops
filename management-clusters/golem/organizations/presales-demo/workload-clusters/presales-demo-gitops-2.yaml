@@ -16,7 +16,7 @@ spec:
       cluster_release: 1.0.0
       default_apps_release: 0.52.0
       organization: presales-demo
-  prune: true
+  prune: false
   serviceAccountName: automation
   sourceRef:
     kind: GitRepository
