@@ -12,3 +12,4 @@ resources:
 - hello-world/appcr.yaml
 - grafana/appcr.yaml
 - grafana/configmap.yaml
+- grafana/dashboard.yaml
