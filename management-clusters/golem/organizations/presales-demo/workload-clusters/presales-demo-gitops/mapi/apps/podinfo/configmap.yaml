@@ -10,7 +10,7 @@ data:
       delay: true
     securityContext:
       seccompProfile:
-        type: RuntimeDefault
+        type: Localhost
       runAsNonRoot: true
       allowPrivilegeEscalation: false
       capabilities:
