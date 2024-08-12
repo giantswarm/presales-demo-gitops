@@ -1,5 +1,14 @@
-podinfo:
-  serviceMonitor:
-    enabled: true
-    labels:
-      application.giantswarm.io/team: presales-demo
+serviceMonitor:
+  enabled: true
+  labels:
+    application.giantswarm.io/team: presales-demo
+faults:
+  error: true
+  delay: true
+resources:
+  requests:
+    cpu: 0.2
+    memory: 200M
+  limits:
+    cpu: 0.4
+    memory: 400M
