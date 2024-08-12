@@ -6,8 +6,8 @@ data:
       additionalLabels:
         application.giantswarm.io/team: presales-demo
     faults:
-      error: true
-      delay: true
+      error: false
+      delay: false
     securityContext:
       runAsUser: 1000
       runAsGroup: 1000
