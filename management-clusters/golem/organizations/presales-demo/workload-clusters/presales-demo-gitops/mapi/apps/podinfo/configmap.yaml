@@ -3,7 +3,7 @@ data:
   values: |
     serviceMonitor:
       enabled: true
-      labels:
+      additionalLabels:
         application.giantswarm.io/team: presales-demo
     faults:
       error: true
