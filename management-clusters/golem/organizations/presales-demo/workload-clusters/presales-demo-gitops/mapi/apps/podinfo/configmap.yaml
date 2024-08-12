@@ -9,6 +9,9 @@ data:
       error: true
       delay: true
     securityContext:
+      seccompProfile:
+        type: RuntimeDefault
+      runAsNonRoot: true
       allowPrivilegeEscalation: false
       capabilities:
         drop:
