@@ -9,6 +9,8 @@ data:
       error: true
       delay: true
     securityContext:
+      runAsUser: 1000
+      runAsGroup: 1000
       seccompProfile:
         type: RuntimeDefault
       runAsNonRoot: true
