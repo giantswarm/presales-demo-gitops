@@ -6,8 +6,8 @@ data:
       additionalLabels:
         application.giantswarm.io/team: presales-demo
     faults:
-      error: true
-      delay: true
+      error: false
+      delay: false
     resources:
       requests:
         cpu: 0.2
