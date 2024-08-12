@@ -1,4 +1,4 @@
-grafana:
+podinfo:
   serviceMonitor:
     enabled: true
     labels:

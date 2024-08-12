@@ -1,12 +1,12 @@
 apiVersion: v1
 data:
   values: |
-    grafana:
+    podinfo:
       serviceMonitor:
         enabled: true
         labels:
           application.giantswarm.io/team: presales-demo
 kind: ConfigMap
 metadata:
-  name: presales-demo-gitops-grafana-user-values
+  name: presales-demo-gitops-podinfo-user-values
   namespace: org-presales-demo

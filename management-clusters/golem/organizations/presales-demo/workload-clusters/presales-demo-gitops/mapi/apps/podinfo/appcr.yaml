@@ -1,13 +1,13 @@
 apiVersion: application.giantswarm.io/v1alpha1
 kind: App
 metadata:
-  name: presales-demo-gitops-grafana
+  name: presales-demo-gitops-podinfo
 spec:
-  catalog: giantswarm
-  name: grafana
+  catalog: podinfo
+  name: podinfo
   namespace: default
-  version: 2.13.0
+  version: 6.7.0
   userConfig:
     configMap:
-      name: presales-demo-gitops-grafana-user-values
+      name: presales-demo-gitops-podinfo-user-values
       namespace: org-presales-demo
