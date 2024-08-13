@@ -1,0 +1,20 @@
+---
+---
+apiVersion: application.giantswarm.io/v1alpha1
+kind: Catalog
+metadata:
+  creationTimestamp: null
+  labels:
+    application.giantswarm.io/catalog-visibility: public
+  name: podinfo
+  namespace: default
+spec:
+  description: podinfo
+  logoURL: https://kubernetes.io/images/favicon.png
+  repositories:
+  - URL: https://stefanprodan.github.io/podinfo
+    type: helm
+  storage:
+    URL: https://stefanprodan.github.io/podinfo
+    type: helm
+  title: podinfo
