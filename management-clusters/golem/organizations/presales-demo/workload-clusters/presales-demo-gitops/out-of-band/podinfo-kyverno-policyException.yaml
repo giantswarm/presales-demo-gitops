@@ -12,9 +12,11 @@ spec:
     - policyName: disallow-capabilities-strict
       ruleNames:
         - autogen-require-drop-all
+        - require-drop-all
     - policyName: disallow-privilege-escalation
       ruleNames:
         - autogen-privilege-escalation
+        - privilege-escalation
     - policyName: require-run-as-nonroot
       ruleNames:
         - autogen-run-as-non-root
@@ -28,6 +30,7 @@ spec:
       - resources:
           kinds:
             - Deployment
+            - ReplicaSet
             - Pod
           names:
           - podinfo*
