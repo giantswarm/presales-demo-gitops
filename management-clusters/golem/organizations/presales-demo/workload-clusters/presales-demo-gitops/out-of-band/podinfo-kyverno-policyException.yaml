@@ -30,6 +30,6 @@ spec:
             - Deployment
             - Pod
           names:
-          - podinfo
+          - podinfo*
           namespaces:
           - default
