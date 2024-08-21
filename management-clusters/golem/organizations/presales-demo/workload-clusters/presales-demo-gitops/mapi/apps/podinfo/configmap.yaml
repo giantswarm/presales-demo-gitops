@@ -7,7 +7,7 @@ data:
         application.giantswarm.io/team: presales-demo
     faults:
       error: false
-      delay: false
+      delay: true
 kind: ConfigMap
 metadata:
   name: presales-demo-gitops-podinfo-user-values
