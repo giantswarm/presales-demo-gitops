@@ -12,3 +12,4 @@ resources:
 - hello-world/appcr.yaml
 - podinfo/appcr.yaml
 - podinfo/configmap.yaml
+- podinfo/dashboard.yaml
