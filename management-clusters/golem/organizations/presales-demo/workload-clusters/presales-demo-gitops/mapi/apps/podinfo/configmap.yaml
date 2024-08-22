@@ -6,7 +6,7 @@ data:
       additionalLabels:
         application.giantswarm.io/team: presales-demo
     faults:
-      error: true
+      error: false
       delay: true
 kind: ConfigMap
 metadata:
