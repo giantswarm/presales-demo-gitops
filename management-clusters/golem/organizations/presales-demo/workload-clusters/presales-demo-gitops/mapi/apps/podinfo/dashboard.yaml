@@ -1,4 +1,4 @@
-gpiVersion: v1
+apiVersion: v1
 data:
   podinfo-demo-dashboard.json: |-
     {
